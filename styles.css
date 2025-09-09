@@ -1,0 +1,405 @@
+
+        /* Basic CSS Reset */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif; /* A common, basic font */
+            line-height: 1.6;
+            color: #333;
+            background-color: #f4f4f4; /* Light gray background */
+        }
+
+        .container {
+            width: 80%;
+            margin: auto;
+            overflow: hidden; /* Clears floats */
+            padding: 0 20px;
+        }
+
+        /* Header Styling */
+        header {
+            background: #2C3E50; /* Sophisticated dark blue */
+            color: #fff;
+            padding-top: 30px;
+            min-height: 70px;
+            border-bottom: #3498DB 4px solid; /* Brighter blue accent */
+        }
+
+        header a {
+            color: #fff;
+            text-decoration: none;
+            text-transform: uppercase;
+            font-size: 16px;
+            transition: color 0.3s ease; /* Smooth transition for hover */
+        }
+
+        header ul {
+            padding: 0;
+            list-style: none; /* Removes bullet points */
+        }
+
+        header li {
+            float: left; /* Aligns nav items horizontally */
+            display: inline;
+            padding: 0 20px 0 20px;
+        }
+
+        header #branding {
+            float: left;
+        }
+
+        header #branding h1 {
+            margin: 0;
+            font-size: 24px;
+        }
+        header #branding .highlight-name { /* Class for "Satish" to make it pop a bit */
+            color: #E0E0E0; /* Slightly lighter than pure white for the name */
+        }
+         header #branding .highlight-role { /* Class for the role */
+            color: #3498DB; /* Match the border accent */
+         }
+
+
+        header nav {
+            float: right;
+            margin-top: 10px;
+        }
+
+        header .highlight, header .current a { /* .highlight is used for the role in branding too now */
+            color: #3498DB; /* Brighter blue highlight, matches border */
+            font-weight: bold;
+        }
+
+        header a:hover {
+            color: #bdc3c7; /* Lighter gray/silver on hover for nav links */
+        }
+
+        /* Hero Section Styling */
+        #hero {
+            min-height: 400px;
+            background: #0779e4; /* New: Plain blue background, removed image */
+            text-align: center;
+            color: #fff;
+            padding-top: 100px; /* Pushes content down */
+            display: flex; /* Using flexbox for vertical centering */
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+
+        #hero img.profile-pic {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%; /* Makes the image circular */
+            border: 3px solid #fff;
+            margin-bottom: 20px;
+        }
+
+        #hero h1 {
+            font-size: 48px;
+            margin-bottom: 20px;
+        }
+
+        #hero p {
+            font-size: 20px;
+            margin-bottom: 30px;
+        }
+
+        .button {
+            display: inline-block;
+            background: #333; /* Kept dark for contrast on light backgrounds */
+            color: #fff;
+            padding: 10px 20px;
+            text-decoration: none;
+            border-radius: 5px;
+            font-size: 18px;
+            transition: background-color 0.3s ease, transform 0.2s ease;
+        }
+        .button:hover {
+            background: #555; /* Darker on hover */
+            transform: translateY(-2px); /* Slight lift on hover */
+        }
+        #hero .button { /* Specific button style for hero */
+            background: #fff; /* White button on blue hero */
+            color: #0779e4; /* Blue text */
+            padding: 12px 25px; /* Slightly larger padding */
+            font-size: 19px; /* Slightly larger font */
+        }
+        #hero .button:hover {
+             background: #f0f0f0; /* Slightly off-white on hover */
+             color: #055aab;
+        }
+
+
+        /* Section Styling */
+        section {
+            padding: 40px 0;
+            border-bottom: 1px solid #ddd; /* Separator line */
+        }
+        section:last-child {
+            border-bottom: none;
+        }
+
+        .section-title {
+            text-align: center;
+            font-size: 32px; /* Slightly larger section titles */
+            margin-bottom: 40px; /* More space below title */
+            color: #2C3E50; /* Match header dark blue for consistency */
+            font-weight: 600; /* Bolder title */
+        }
+
+        #about p, #contact p.intro-text { /* Added class for intro text */
+            font-size: 17px; /* Slightly larger paragraph text */
+            line-height: 1.8;
+            margin-bottom: 20px;
+            text-align: center;
+        }
+         #about .container, #contact .container {
+            max-width: 800px; /* Limit width for readability */
+        }
+
+
+        /* Projects Section Styling */
+        #projects {
+            background-color: #ECF0F1; /* Light grayish blue for project section background */
+        }
+        #projects .project-grid {
+            display: grid; /* Using basic grid for layout */
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); /* Responsive grid columns */
+            gap: 25px; /* Increased gap */
+        }
+
+        .project-card {
+            background: #fff;
+            padding: 25px; /* Increased padding */
+            border: 1px solid #bdc3c7; /* Softer border */
+            border-radius: 8px; /* More rounded corners */
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1); /* Softer, more modern shadow */
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        .project-card:hover {
+            transform: translateY(-5px); /* Slight lift on hover */
+            box-shadow: 0 6px 12px rgba(0,0,0,0.15);
+        }
+
+        .project-card img {
+            width: 100%;
+            height: 200px; /* Fixed height for consistency */
+            object-fit: cover; /* Ensures image covers the area nicely */
+            border-radius: 5px; /* Slightly rounded images */
+            margin-bottom: 15px;
+        }
+
+        .project-card h3 {
+            font-size: 22px; /* Larger project titles */
+            margin-bottom: 10px;
+            color: #2980B9; /* A nice blue for project titles */
+        }
+
+        .project-card p {
+            font-size: 15px; /* Slightly larger project description */
+            margin-bottom: 15px;
+            color: #555; /* Darker gray for better readability */
+        }
+
+        .project-card a {
+            color: #2980B9;
+            text-decoration: none;
+            font-weight: bold;
+            transition: color 0.3s ease;
+        }
+        .project-card a:hover {
+            color: #1F618D; /* Darker blue on hover */
+            text-decoration: underline;
+        }
+
+        /* Skills Section Styling */
+        #skills .skills-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+            gap: 20px; /* Increased gap */
+            text-align: center;
+        }
+
+        .skill-item {
+            background: #fff;
+            padding: 20px; /* Increased padding */
+            border: 1px solid #ddd;
+            border-radius: 8px; /* More rounded */
+            box-shadow: 0 2px 4px rgba(0,0,0,0.08);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        .skill-item:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 4px 6px rgba(0,0,0,0.12);
+        }
+        .skill-item img {
+            width: 50px;
+            height: 50px;
+            margin-bottom: 10px;
+        }
+        .skill-item p {
+            font-size: 16px;
+            font-weight: bold;
+            color: #333;
+        }
+
+        /* Contact Section Styling */
+        #contact {
+             background-color: #34495E; /* Darker background for contact section */
+             color: #ECF0F1; /* Light text color for contrast */
+        }
+        #contact .section-title {
+            color: #fff; /* White title on dark background */
+        }
+        #contact p.intro-text {
+            color: #bdc3c7; /* Lighter gray for intro text */
+        }
+
+        #contact form {
+            max-width: 600px;
+            margin: 20px auto;
+            padding: 30px; /* Increased padding */
+            background: #2C3E50; /* Slightly lighter than section, but still dark */
+            border-radius: 8px;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+        }
+
+        #contact label {
+            display: block;
+            margin-bottom: 8px; /* Increased margin */
+            font-weight: bold;
+            color: #ECF0F1; /* Light label text */
+        }
+
+        #contact input[type="text"],
+        #contact input[type="email"],
+        #contact textarea {
+            width: 100%;
+            padding: 12px; /* Increased padding */
+            margin-bottom: 20px; /* Increased margin */
+            border: 1px solid #566573; /* Border for dark inputs */
+            border-radius: 5px; /* Rounded inputs */
+            background-color: #3B4E60; /* Darker input background */
+            color: #ECF0F1; /* Light input text */
+            font-size: 16px;
+        }
+        #contact input[type="text"]::placeholder,
+        #contact input[type="email"]::placeholder,
+        #contact textarea::placeholder {
+            color: #95A5A6; /* Placeholder text color */
+        }
+
+
+        #contact textarea {
+            height: 120px;
+        }
+
+        #contact input[type="submit"] { /* This is the .button class, but can be specific if needed */
+            display: block;
+            width: 100%;
+            background: #3498DB; /* Brighter blue for submit button */
+            color: #fff;
+            border: 0;
+            padding: 12px 20px;
+            font-size: 18px;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s ease, transform 0.2s ease;
+        }
+
+        #contact input[type="submit"]:hover {
+            background: #2980B9; /* Darker blue on hover */
+            transform: translateY(-2px);
+        }
+
+        .contact-info {
+            text-align: center;
+            margin-top: 40px; /* More space */
+        }
+        .contact-info p {
+            margin-bottom: 10px;
+            font-size: 16px; /* Slightly larger */
+        }
+        .contact-info a {
+            color: #3498DB; /* Brighter blue for links */
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+        .contact-info a:hover {
+            color: #5DADE2; /* Lighter blue on hover */
+            text-decoration: underline;
+        }
+
+
+        /* Footer Styling */
+        footer {
+            background: #1C2833; /* Very dark blue/black for footer */
+            color: #95A5A6; /* Lighter gray for footer text */
+            text-align: center;
+            padding: 40px 0; /* Increased padding */
+            margin-top: 0; /* Remove margin if contact section is dark */
+        }
+        footer p {
+            margin: 0;
+            font-size: 14px;
+        }
+        footer .footer-note {
+            font-size: 12px;
+            color: #7F8C8D;
+            margin-top: 5px;
+        }
+
+        /* Responsive Adjustments (Basic Example) */
+        @media(max-width: 768px){
+            header #branding,
+            header nav,
+            header nav li {
+                float: none;
+                text-align: center;
+                width: 100%;
+            }
+            header #branding h1 {
+                font-size: 22px; /* Adjust for smaller screens */
+                margin-bottom: 10px;
+            }
+
+            header nav ul {
+                margin-top:10px;
+            }
+            header nav li {
+                padding: 8px 0; /* More padding for touch */
+            }
+
+            #hero { /* Ensure hero content is centered on mobile too */
+                padding-top: 60px; /* Adjust padding for mobile */
+                min-height: 350px; /* Adjust min-height for mobile */
+            }
+            #hero h1 {
+                font-size: 32px; /* Adjusted hero title for mobile */
+            }
+            #hero p {
+                font-size: 16px; /* Adjusted hero paragraph for mobile */
+            }
+            #hero .button {
+                padding: 10px 20px;
+                font-size: 17px;
+            }
+
+
+            .container {
+                width: 90%; /* Use more width on smaller screens */
+            }
+
+            #projects .project-grid,
+            #skills .skills-grid {
+                grid-template-columns: 1fr; /* Stack items on smaller screens */
+            }
+            .section-title {
+                font-size: 26px; /* Smaller section titles on mobile */
+            }
+        }

@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kurru Nanda Gopal - Student Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <header>
+        <div class="container">
+            <div id="branding">
+                 <h1><span class="highlight-name">Nanda Gopal</span> <span class="highlight-role">- ECE Student</span></h1>
+            </div>
+            <nav>
+                <ul>
+                    <li class="current"><a href="#hero">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#skills">Skills</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section id="hero">
+        <img src="suitpic.jpg" alt="Satish Profile Picture" class="profile-pic">
+        <h1>Welcome to My Portfolio!</h1>
+        <p>I'm Nanda Gopal, a Student passionate about software development  and web designer </p>
+        <a href="#projects" class="button">View My Work</a>
+    </section>
+
+    <section id="about">
+        <div class="container">
+            <h2 class="section-title">About Me</h2>
+            <p>
+                Hello! I'm Gopal, a highly motivated  A highly motivated and enthusiastic fresher with 
+                a strong academic background in Electronics and Communication Engineering.
+                 I have solid technical skills in C and Python and a strong foundation 
+                in basic electronics. Eager to apply my knowledge and skills to contribute to 
+                organizational growth.
+
+            </p>
+            <p>
+                When I'm not coding, I enjoy exploring new technologies, contributing to open-source projects, and reading tech blogs.
+                I'm always looking for new challenges and opportunities to grow.
+            </p>
+        </div>
+    </section>
+
+    <section id="projects">
+        <div class="container">
+            <h2 class="section-title">My Projects</h2>
+            <div class="project-grid">
+                <div class="project-card">
+                    <img src="https://placehold.co/600x400/2980B9/FFFFFF?text=Project+Alpha" alt="Project Alpha Screenshot" onerror="this.src='https://placehold.co/600x400/CCCCCC/FFFFFF?text=Image+Error'">
+                    <h3>Project Alpha</h3>
+                    <p>A responsive website for a fictional startup, built with HTML, CSS, and a touch of JavaScript for interactivity. Focused on clean design and user experience.</p>
+                    <a href="#">View Details</a>
+                </div>
+                <div class="project-card">
+                    <img src="https://placehold.co/600x400/27AE60/FFFFFF?text=Project+Beta" alt="Project Beta Screenshot" onerror="this.src='https://placehold.co/600x400/CCCCCC/FFFFFF?text=Image+Error'">
+                    <h3>Project Beta</h3>
+                    <p>An interactive to-do list application that helps users manage their daily tasks. Developed using vanilla JavaScript for DOM manipulation and local storage.</p>
+                    <a href="#">View Details</a>
+                </div>
+                <div class="project-card">
+                    <img src="https://placehold.co/600x400/D35400/FFFFFF?text=Project+Gamma" alt="Project Gamma Screenshot" onerror="this.src='https://placehold.co/600x400/CCCCCC/FFFFFF?text=Image+Error'">
+                    <h3>Project Gamma</h3>
+                    <p>A personal blog platform with a focus on readability and simple navigation. This project emphasized semantic HTML and CSS for styling and layout.</p>
+                    <a href="#">View Details</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="skills">
+        <div class="container">
+            <h2 class="section-title">Skills</h2>
+            <div class="skills-grid">
+                <div class="skill-item">
+                    <img src="https://placehold.co/64x64/E44D26/FFFFFF?text=HTML" alt="HTML5 Icon">
+                    <p>HTML5</p>
+                </div>
+                <div class="skill-item">
+                     <img src="https://placehold.co/64x64/2965F1/FFFFFF?text=CSS" alt="CSS3 Icon">
+                    <p>CSS3</p>
+                </div>
+                <div class="skill-item">
+                    <img src="https://placehold.co/64x64/F0DB4F/000000?text=JS" alt="JavaScript Icon">
+                    <p>JavaScript</p>
+                </div>
+                <div class="skill-item">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR2Fj0zoSD0e4V7siSTI221US9cMrtjc8A2og&s" alt="python Icon">
+                    <p>PYTHON</p>
+                </div>
+                <div class="skill-item">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSvLbH6_LOVKKoFEI1T06alVq9UDilSVSfhUw&s" alt="Data Structures Icon">
+                    <p>Data Structures</p>
+                </div>
+                 <div class="skill-item">
+                    <img src="https://placehold.co/64x64/F24E1E/FFFFFF?text=Git" alt="Git Icon">
+                    <p>Git & GitHub</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact">
+        <div class="container">
+            <h2 class="section-title">Get In Touch</h2>
+            <p class="intro-text">If you'd like to discuss a project or just say hi, feel free to reach out!</p>
+            <form action="#" method="POST">
+                <div>
+                    <label for="name">Full Name:</label>
+                    <input type="text" name="name" id="name" placeholder="Your Name" required>
+                </div>
+                <div>
+                    <label for="email">Email Address:</label>
+                    <input type="email" name="email" id="email" placeholder="you@example.com" required>
+                </div>
+                <div>
+                    <label for="message">Message:</label>
+                    <textarea name="message" id="message" placeholder="Your message..." required></textarea>
+                </div>
+                <div>
+                    <input type="submit" value="Send Message" class="button">
+                </div>
+            </form>
+            <div class="contact-info">
+                <p>Or contact me via:</p>
+                <p>Email: <a href="mailto:nandagopalkurru@gmail.com">nandagopalkurru@gmail.com</a></p>
+                <p>LinkedIn: <a href="#" target="_blank">https://www.linkedin.com/in/nanda-gopal-kurru-019a1b280</a> </p>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>&copy; <span id="currentYear"></span> Gopal - Engineering Student. All rights reserved.</p>
+            <p class="footer-note">Portfolio demonstrating basic HTML & CSS.</p>
+        </div>
+    </footer>
+
+  <script src="script.js"></script>
+
+</body>
+</html>
